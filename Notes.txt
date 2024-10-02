@@ -1,0 +1,148 @@
+1. Introduction to TypeScript
+
+What is TypeScript?
+Overview and History
+
+Advantages of using TypeScript over JavaScript: Provides type safety to JS 
+
+Setting Up TypeScript
+Installing TypeScript
+Setting up TypeScript in an IDE (VSCode): just install TS 
+Configuring tsconfig.json
+
+How to run a ts file: tsc FILE_NAME
+tsc stands for typescript Compiler
+
+
+
+2. Basic TypeScript Types
+Primitive Types
+string, number, boolean
+
+Array and Tuple Types
+Typed arrays
+Tuples and their usage
+Enums
+Defining and using Enums
+Any, Unknown, Void, and Never
+Type Inference
+How TypeScript infers types
+Type Assertions
+Using as for type assertions
+
+
+3. Functions in TypeScript
+Typing Functions
+Defining parameter types and return types
+Optional and Default Parameters
+Rest Parameters
+Function Overloading
+
+
+4. Objects and Interfaces
+Defining Object Types
+Interfaces
+Declaring interfaces
+Optional and read-only properties
+Extending interfaces
+Type Aliases
+Difference between Type Aliases and Interfaces
+
+
+5. Classes in TypeScript
+Basic Class Syntax
+Defining properties and methods
+Public, Private, and Protected Modifiers
+Readonly Properties
+Getters and Setters
+Inheritance and Extending Classes
+Abstract Classes
+Static Methods and Properties
+
+
+6. Advanced Types
+Union and Intersection Types
+Literal Types
+String and numeric literal types
+Type Guards
+Using typeof, instanceof, and custom type guards
+Type Narrowing
+Discriminated Unions
+Mapped Types
+Partial, Required, Readonly, and Record utility types
+
+
+7. Generics
+Generic Functions
+Writing functions with generic types
+Generic Classes and Interfaces
+Constraints on Generics
+Default Values for Generics
+
+
+8. Modules and Namespaces
+Exporting and Importing Modules
+Default vs named exports
+TypeScript Namespaces
+Declaration Merging
+
+
+9. Working with Third-Party Libraries
+Installing Type Definitions
+Using DefinitelyTyped and @types
+Integrating TypeScript with popular libraries (e.g., React, Node.js)
+Handling Non-TypeScript Libraries
+Using any and custom type definitions
+
+
+10. TypeScript and JavaScript Interoperability
+Mixing TypeScript and JavaScript Files
+Migrating a JavaScript project to TypeScript
+Declaration Files (.d.ts)
+Writing and using declaration files for external JavaScript modules
+
+11. TypeScript in Frontend Frameworks
+TypeScript with React
+Typing React Components and Props
+Hooks with TypeScript
+TypeScript with Angular
+TypeScript with Vue
+
+
+12. TypeScript in Backend Development
+TypeScript with Node.js
+Express with TypeScript
+Typing requests and responses
+Working with Databases in TypeScript (TypeORM, Prisma)
+
+
+13. Error Handling in TypeScript
+Error Types and Throwing Errors
+Defining Error Interfaces
+Custom Error Classes
+
+14. TypeScript Tooling and Best Practices
+Linters and Formatters (ESLint, Prettier)
+Compiling TypeScript
+Compiler options and strict mode
+Using tsc for Compilation
+Debugging TypeScript
+Code Quality Best Practices
+Structuring projects
+Using interfaces and types effectively
+
+
+15. Testing in TypeScript
+Setting Up Testing Tools (Jest, Mocha)
+Writing Test Cases with TypeScript
+Mocking and Stubbing in TypeScript
+
+
+16. Advanced TypeScript Features
+Conditional Types
+Mapped Types
+Utility Types
+Partial, Pick, Omit, Record
+Recursive Types
+Template Literal Types
+TypeScript Decorators (experimental feature)

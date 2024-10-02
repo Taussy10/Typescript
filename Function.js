@@ -12,15 +12,15 @@ console.log("name", "surName");
 // arro fucntion in tys
 // The : string after the parameter list indicates
 // that the function returns a value of type string.
-var getHello = function (s) {
+const getHello = (s) => {
     return s;
 };
 getHello("Hello");
+// arrays in typescript
 // ts is smart enough to get the types
-var heros = ["Thor", "Musk", "Spider man"];
+const heros = ["Thor", "Musk", "Spider man"];
 console.log(heros);
-var array = ["Thor", 5, false];
-console.log(array);
-array.forEach(function (element) {
+const array = ["Thor", 5, false];
+array.forEach(element => {
     console.log(element, "HEllo");
 });
