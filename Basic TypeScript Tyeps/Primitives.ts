@@ -91,6 +91,7 @@ const arr2:[number , boolean] = [33, true]
 // Enums Any , unknonw , void , null , undefined , Never
 
 // Enumerations: Kinda Objects
+// are use to defined key value pair
 
  enum colors {
  Red = "red",
@@ -98,3 +99,16 @@ const arr2:[number , boolean] = [33, true]
  green = "green",
  }
 // get the value: colors.Red 
+
+// for numeric Enums
+// if you don't define pair then it will start to give number from 0
+// if you define starting number then from that
+
+enum E {
+    A = getSomeValue(),
+    // Not ts error it's js error
+    B = 32 , //rmove 32 and see magic
+  // If you don't provide value in non neumeric then face the error
+  }
+
+
