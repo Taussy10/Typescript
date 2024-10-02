@@ -86,9 +86,9 @@ const arr2:[number , boolean] = [33, true]
 
 
 
-
-
 // Enums Any , unknonw , void , null , undefined , Never
+
+
 
 // Enumerations: Kinda Objects
 // are use to defined key value pair
@@ -110,5 +110,37 @@ enum E {
     B = 32 , //rmove 32 and see magic
   // If you don't provide value in non neumeric then face the error
   }
+
+
+
+// Any
+// By default dataType value = any
+// make sure that you don't have any type has any because if it is then what is the why are you using ts
+
+let zero;
+zero = 1
+zero = "Hello"
+
+// Unknown: To changing types acc to needs
+
+let g: unknown = 45
+g = "Hello"
+// typeof g has changed to string 
+
+if (typeof g === "string") {
+    console.log("It's a string");
+} 
+
+
+let f: unknown = 45
+f = "Hello"
+// typeof f has changed to string 
+f = 43
+
+if (typeof f === "string") {
+    console.log("It's a string");
+} else{
+      console.log("It's a number");
+}
 
 
