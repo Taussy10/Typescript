@@ -96,14 +96,48 @@ else {
     console.log("It's a number");
 }
 // Void: for function 
-// You have to write return if not return then use void
+//if function is not returning anything
+//then use void(means empty)
+// IN params we define variables formally called params
 function fun1(hello) {
     console.log("hello");
     // not returning anything so use void
 }
 fun1();
-function fun2(, number) {
-    return;
-    console.log(number);
+// If function returning anything then tell what it's returning
+function fun2(a) {
+    console.log(a);
+    return 45;
 }
-fun2();
+fun2("Hello it's ts");
+// Related to js/ts one thing wanna tell you 
+// the code is written in 
+function fun3(a) {
+    console.log(a);
+}
+fun3("You will get undefine statement");
+//  Why is there undefined ?
+// cause In JS, a function that doesn’t return any value will implicitly return the value undefined
+// so return something it won't show undefined
+function fun4(a) {
+    console.log(a);
+    return a;
+}
+fun4("Hello , You won't get any retrun undefine ");
+// Return(Optional staement) statement in JS use for
+// 1. exit a function 
+// 2. Returns whatever you want (BTW not console cause it is use for consoling something on screen doesn't have any value)
+//  Null: when you want to find but don't get then you got null
+let h = null;
+// Undefined: If you don't give value to something then undefined
+let i;
+// Never: a function that will not return something
+function fun5() {
+    while (true) {
+        console.log("Hello");
+    }
+}
+fun5; // fun() don't execute function 
+// It's dull because funtion aage badhega hi nahi loop will keep executing and your cpu case fan will move fast
+// Check in task manager
+console.log("hely");
