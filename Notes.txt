@@ -25,6 +25,7 @@ Tuples and their usage
 Enums
 Defining and using Enums
 Any, Unknown, Void, and Never
+
 Type Inference
 How TypeScript infers types
 Type Assertions

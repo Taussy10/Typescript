@@ -216,7 +216,9 @@ function fun5(): never {
     
 }
 fun5 // fun() don't execute function 
-// It's dull because funtion aage badhega hi nahi loop will keep executing and your cpu case fan will move fast
+// console will dull  because funtion aage badhega hi nahi loop will keep executing and your cpu case fan will move fast
 // Check in task manager
 console.log("hely");
+
+
 
