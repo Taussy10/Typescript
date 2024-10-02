@@ -121,7 +121,7 @@ let zero;
 zero = 1
 zero = "Hello"
 
-// Unknown: To changing types acc to needs
+// Unknown: Put any value any unkonw types but later change to whatver types you want
 
 let g: unknown = 45
 g = "Hello"
@@ -144,3 +144,18 @@ if (typeof f === "string") {
 }
 
 
+// Void: for function 
+// You have to write return if not return then use void
+
+function fun1(hello: string): void {
+    console.log("hello");
+// not returning anything so use void
+}
+
+fun1()
+
+function fun2(2:number):Boolean {
+    return
+    console.log(number);
+}
+fun2()

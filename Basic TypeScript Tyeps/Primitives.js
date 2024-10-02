@@ -78,7 +78,7 @@ var E;
 let zero;
 zero = 1;
 zero = "Hello";
-// Unknown: To changing types acc to needs
+// Unknown: Put any value any unkonw types but later change to whatver types you want
 let g = 45;
 g = "Hello";
 // typeof g has changed to string 
@@ -95,3 +95,15 @@ if (typeof f === "string") {
 else {
     console.log("It's a number");
 }
+// Void: for function 
+// You have to write return if not return then use void
+function fun1(hello) {
+    console.log("hello");
+    // not returning anything so use void
+}
+fun1();
+function fun2(, number) {
+    return;
+    console.log(number);
+}
+fun2();
