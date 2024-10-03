@@ -143,10 +143,11 @@ if (typeof f === "string") {
       console.log("It's a number");
 }
 
-
 // Void: for function 
-//if function is not returning anything
-//then use void(means empty)
+//that a function what will it return 
+// if nothing thenuse void(means empty)
+// if return something then write what it returns number , string ...
+
 
 
 // IN params we define variables formally called params
@@ -165,6 +166,23 @@ function fun2(a: string):Number {
     return 45
 }
 fun2("Hello it's ts")
+
+
+// It will return number so instead of void Number return
+function fun6(name:String):Number {
+    console.log(name);
+    return 5
+    
+}
+fun6("Tausif")
+
+
+
+
+
+
+
+
 
 
 // Related to js/ts one thing wanna tell you 

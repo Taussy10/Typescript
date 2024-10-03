@@ -95,9 +95,10 @@ if (typeof f === "string") {
 else {
     console.log("It's a number");
 }
-// Void: for function 
-//if function is not returning anything
-//then use void(means empty)
+
+
+
+
 // IN params we define variables formally called params
 function fun1(hello) {
     console.log("hello");
@@ -141,3 +142,5 @@ fun5; // fun() don't execute function
 // console will dull  because funtion aage badhega hi nahi loop will keep executing and your cpu case fan will move fast
 // Check in task manager
 console.log("hely");
+
+
