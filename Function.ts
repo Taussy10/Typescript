@@ -107,9 +107,26 @@ getHello("Hello")
 
 
 
+// Rest parameters
+// First understand probles
+
+// 2. Then you need a lot of parameters
+function fun4(a,b , c , d) {
+    console.log("Hello");
+    
+}
+// 1. Imagine you have a lot arguments then 
+fun4(1, 3, 23, 32,)
+
+// 3. So don't do that isntead
 
 
-
+// don't write arguments cause it's keyword so can't use 
+function fun5(...args:number[]) {
+    console.log(args);
+    
+}
+fun5(3,1,43,23,32)
 
 
 
