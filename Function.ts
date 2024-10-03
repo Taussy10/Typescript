@@ -122,10 +122,13 @@ fun4(1, 3, 23, 32,)
 
 
 // don't write arguments cause it's keyword so can't use 
+
+// 1.then we spread(we spread each params) params(aka arguments) and put in array 
 function fun5(...args:number[]) {
     console.log(args);
     
 }
+//1. We define arguments(AKA params) 
 fun5(3,1,43,23,32)
 
 
