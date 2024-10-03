@@ -118,7 +118,7 @@ function fun4(a,b , c , d) {
 // 1. Imagine you have a lot arguments then 
 fun4(1, 3, 23, 32,)
 
-// 3. So don't do that isntead
+// 3. So don't do that instead us ...rest/spread operator
 
 
 // don't write arguments cause it's keyword so can't use 
@@ -133,6 +133,62 @@ fun5(3,1,43,23,32)
 
 
 
+// 1. rest(store) it out all of them using rest oprator
+// rest operator store them into [array] that's why array data type
+function fun6(...num: number[]):void {
+    console.log(num);
+    // every num will be stored in an array
+    
+    let sum = 0
+    // we made a container where we can store sum
+num.forEach(element => {
+// will touch each element till the last index 
+// and if you want to console you can console it 
+// it will each element 
+
+     sum  = sum +  element
+    // sum = 0 = 0+ firs index value(32) = 32
+    // sum = 32 = 32 + 2nd index value(32) = 64
+    // sum = 64 = 64 + 22 = 86
+    // keep on 
+
+    // we won't console sum here cause here loop keep moving till the last index completed
+       });
+console.log(sum , "completed additon");
+
+}
+
+// so we have too many arguments and we want to sum them 
+// so 
+fun6(32, 32,22, 32,12)
+
+
+function fun7(...num: number[]):void {
+    // every elemnts has stored in an array
+
+    // what do we want ? multipication of each element
+    let multi:number = 1;
+//  so we want a container where we can store value of mutli
+// we can't use 0 cause 0* any number = 0
+    num.forEach(val => {
+        multi = multi *val
+        // multi = 1 = mutli * first index value = 3 = 3*1 = 3
+        // 
+    });
+    
+        console.log(multi);
+
+}
+
+fun7(3,2,5,2)
+
+
+// spread operator: Spread the value of an array
+const arr1 = [1,5,3,2]
+var arr2 = [...arr1]
+// ...arr = 1,5,3,2 then it will store in arr2
+console.log(...arr1 , "arr1");
+console.log(arr2 , "arr2");
 
 
 
@@ -144,19 +200,6 @@ fun5(3,1,43,23,32)
 
    
 
-
-
-// arrays in typescript
-// ts is smart enough to get the types
-const heros =  ["Thor" , "Musk" , "Spider man"]
-console.log(heros);
-  
-const array =  ["Thor" , 5 , false]
-
-array.forEach(element => {
-    console.log(element , "HEllo");
-    
-});
 
 
 

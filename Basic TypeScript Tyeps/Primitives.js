@@ -95,10 +95,10 @@ if (typeof f === "string") {
 else {
     console.log("It's a number");
 }
-
-
-
-
+// Void: for function 
+//that a function what will it return 
+// if nothing thenuse void(means empty)
+// if return something then write what it returns number , string ...
 // IN params we define variables formally called params
 function fun1(hello) {
     console.log("hello");
@@ -111,6 +111,12 @@ function fun2(a) {
     return 45;
 }
 fun2("Hello it's ts");
+// It will return number so instead of void Number return
+function fun6(name) {
+    console.log(name);
+    return 5;
+}
+fun6("Tausif");
 // Related to js/ts one thing wanna tell you 
 // the code is written in 
 function fun3(a) {
@@ -142,5 +148,3 @@ fun5; // fun() don't execute function
 // console will dull  because funtion aage badhega hi nahi loop will keep executing and your cpu case fan will move fast
 // Check in task manager
 console.log("hely");
-
-
