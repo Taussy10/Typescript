@@ -1,3 +1,13 @@
+Learn Typescirpt from here
+https://www.typescriptlang.org/docs/
+https://www.youtube.com/watch?v=lVzb6pmel_E&t=11104s
+https://www.typescriptlang.org/play/#code/Q
+Practice here
+
+
+
+
+
 1. Introduction to TypeScript
 
 What is TypeScript?

@@ -1,4 +1,9 @@
 "use strict";
+
+
+
+
+
 const intro = "Typescript provides typeSafety to JS";
 //variblename: type = value
 // To run ts file: tsc File_Name 
