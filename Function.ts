@@ -25,20 +25,54 @@ fun1("Tausif", (value:string) => {
 })
 
 
-// we have two params 1.name and 2nd callbacks
-// In params we write types so here is 2 types: string and fun
+
+// In params we write 1.Name of params and 2.Type BTW if there is an array , functio or anything then write only types 
+// we have two params 1.name having string types  2nd.callback function  having void type and inside callback function we have it's parms "a" having number type
+// in callback we defined type of a 
+
 // and how to write funciton types:  funName: () => void
 // BTW void when it doesn't return anything 
 
-function fun2(name:string , callbacks:() => void ) {
+
+function fun2(name:string , callback:(a: number) => void ) {
+    // 3. console it
     console.log(name);
     
+    // after execution of fun1 then callback execute cause callback is parmas of fun1
+    callback(25)
 }
 
-// Here we write value of name and value of callbacks fun
-fun2("Tausif" , () => {
+// Here we write value of first params and value of 2nd prams and it's params value and consoled it 
+// Here we wrote params a in actual function that will execution and that  a:number is just for types
+// You can write types of a(a:number) but don't need cause you have alredy defined it in parms 
+fun2("Tausif" , (a) => {
+    console.log(a);
     
 } )
+
+
+
+// Hehe just for fun: The more you lenthy function you want can be created 
+function fun3(name:string , callback:(a: number , cb1:() => void) => void ) {
+    // 3. console it
+    console.log(name);
+    
+    // after execution of fun1 then callback execute cause callback is parmas of fun1
+    callback(25 , ()=> {
+         console.log("hello");
+         
+    })
+}
+
+// Here we write value of first params and value of 2nd prams and it's params value and consoled it 
+// Here we wrote params a in actual function that will execution and that  a:number is just for types
+fun3("Tausif" , (a ,cb1 ) => {
+    console.log(a);
+    cb1()
+    
+} )
+
+
 
 
 
