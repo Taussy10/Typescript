@@ -192,9 +192,55 @@ console.log(arr2 , "arr2");
 
 
 
+// Function Overloading:Function name can have same but should have diff signature
+// This approach allows you to differentiate between the two functions based on the arguments passed.
+// function signature: having diff parmater and tyes between two function 
+
+function abcd() {
+    
+}
+function abcd() {
+    
+}
+// Both have same signature 
 
 
 
+// We have two fun
+function ijkl(a: String): void
+// 1st having parms a as string and returning void
+function ijkl(a: string , b: number):number 
+// 2nd having parms a as string , b as number and  returning number
+
+
+// we created an big fun combining both ijkl and running using if statemnt
+// that if the certain stasified then 1st fun will work and safe fore 2nd fun
+
+function ijkl(a:any , b?: any):void|number {
+    // having any so that we can cahgne it later
+    // and opitonal b casue 1st fun doesn't have b
+    if (typeof a === "string" && b === undefined) {
+        // undefined means we tried to search but it doesn't exist
+        console.log("first one is working fine ");
+        
+    }
+   else if (typeof a === "string" && typeof b === "number") {
+     console.log("2nd fun is working fine ");
+     
+        return 123
+        // for 2nd fun 
+
+    }
+    else throw new Error("something is wrong")
+    
+}
+// now we can run both 1st and 2nd fun
+ijkl("1st fun")
+ijkl("2nd fun" , 32)
+
+
+
+// thorw new Error
 
 
 
