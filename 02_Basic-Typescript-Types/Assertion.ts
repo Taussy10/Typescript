@@ -3,7 +3,7 @@
 // Type Assertions
 // Using as for type assertions
 
-// Both tyep asssertion and type casting(converting one tyep from another) is same
+// Both type asssertion and type casting(converting one tyep from another) is same
 
 // Assertion: Assuming that something is true
 

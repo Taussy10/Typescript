@@ -1,4 +1,15 @@
 "use strict";
+
+// Type Inference
+// How TypeScript infers types
+// Type Assertions
+// Using as for type assertions
+
+
+
+
+
+
 const intro = "Typescript provides typeSafety to JS";
 //variblename: type = value
 // To run ts file: tsc File_Name 
