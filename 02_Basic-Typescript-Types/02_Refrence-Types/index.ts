@@ -8,6 +8,10 @@
 
 export {}
 
+
+// // Practice array and objects you are not good at this and complete this file also understand refrence types
+
+
 // Refrence(cause everything happens on parent): () , [] and {}
 
 
@@ -30,13 +34,14 @@ console.log(c); // 10
 // So nothing happens to parent(parent bole to for c , b is parent and for b , a is parent)
 // cause b copied a but a =! b 
 
+
 // Value copying in Refrence data typs 
 let d:number[] = [1, 2, 3]
 let e:number[] = d
 // So according to logic e = [1,2,3] 
 
-
-let f:number[] = e.splice(e.length - 1, 1) // calcu e length(3) and subtract one(3- 1 = 2) then remove the last and returns it 
+// splice method takes indexes 
+let f:number[] = e.splice(e.length - 1, 1) // calcu e length(3) and subtract one(3- 1 = 2nd index) then remove the 1 elemnt and returns it 
 
 console.log(d); //[1, 2]
 console.log(e); //[1, 2]
@@ -47,4 +52,20 @@ console.log(f); //[3]
 // cause b copied(not copied basically it took refrence of parnet) a but a = b 
 
 // that's why called refrence types cause they take refrece of parent not copy it
+
+
+// JS concpets
+// console.log() is method(log is function in console named array)
+// hello.hehe is proprty(hehe is property in array named hehe)
+
+
+
+
+
+
+
+
+
+
+
 
