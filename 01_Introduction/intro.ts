@@ -1,20 +1,44 @@
+// 1. Introduction to TypeScript
 
-const intro: string = "Typescript provides typeSafety to JS"
-//variblename: type = value
-
-
-
+// 1.1 What is TypeScript ?
+// It's superScript of JavaScript uses for providing type safety to the javascript
 
 
-// To run ts file: tsc File_Name 
-// It will compile a js file and if any error will show it 
 
-//  To run js file: node file_Name
+// Overview and History
+// Created by Microsoft in 2.13
+
+
+
+// Advantages of using TypeScript over JavaScript: Provides type safety to JS 
+
+
+
+// Setting up TypeScript in an IDE (VSCode): just install TS 
+// It will install Typescript compiler(tsc)
+
+
+// How to run a typescript file ? 
+// tsc <fileName>
+
+// Tip: If you don't want to compile tsc file again and again you can
+// automate it using  <tsc --watch> to keep compiling TS code 
+
+
+
+// BTW How to execute js file ?
+// To run js file: node file_Name
 // Node is a run time enviroment that provides an enviorment to run js
 // outside of browser
 
-// tsc -watch to keep compiling it
-
+// Configuring tsconfig.json
 // TScofig.json for giving rule to ts
 // do it by tsc --init
-// file specifies the root files and the compiler options required to compile the project.
+
+
+
+
+// Here is "Typesafe js code" = Typescript code  
+const intro: string = "Typescript provides typeSafety to JS"
+// intro: string showing that the variable intro is string 
+

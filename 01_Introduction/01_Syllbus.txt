@@ -6,8 +6,6 @@ Practice here
 
 
 
-
-
 1. Introduction to TypeScript
 
 What is TypeScript?
@@ -17,11 +15,9 @@ Advantages of using TypeScript over JavaScript: Provides type safety to JS
 
 Setting Up TypeScript
 Installing TypeScript
-Setting up TypeScript in an IDE (VSCode): just install TS 
+Setting up TypeScript in an IDE (VSCode): 
 Configuring tsconfig.json
 
-How to run a ts file: tsc FILE_NAME
-tsc stands for typescript Compiler
 
 
 

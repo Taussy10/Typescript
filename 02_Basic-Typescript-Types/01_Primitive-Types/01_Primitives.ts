@@ -1,4 +1,32 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export {};
+
+
+
+
+
+
+
+
 
 const intro: string = "Typescript provides typeSafety to JS"
 //variblename: type = value
@@ -19,7 +47,7 @@ const intro: string = "Typescript provides typeSafety to JS"
 // Basic types:   
 //  Primitve types: number , string, boolean 
 const str:string = "String"
-let Num: number = 43;
+let num: number = 43;
 const bool: boolean = true;
 
 
