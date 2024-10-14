@@ -1,10 +1,6 @@
 // 2.2 Refrenced Types
-//  Array and Tuple Types
-// Typed arrays
-// Tuples and their usage
-// Enums
-// Defining and using Enums
-// Any, Unknown, Void, and Never
+//  Array 
+// Tuples 
 
 export {}
 
@@ -60,6 +56,51 @@ console.log(f); //[3]
 
 
 
+
+// 2.2.1  Arrays types  
+
+let arr:number[] = [2 ,3, 3]
+// If you are creating one type of array then do this 
+
+// If an array has more than one data types values then  it can infer by itself that 
+// what is type of each array items
+let arr1 = [1 , "hello" , true , ]
+
+
+// 2.2.2 Tuple Types  
+
+// Tuples: Kinda array that knows
+// 1. how many elements an array contains
+// 2. Which type of arrayItesm and at what position 
+
+// and if you don't follow both rules then it will give error
+
+// Tuple on variables 
+const arr2:[number , boolean] = [33, true] 
+// arr2 0th index:number , 1st index: boolean and will take only 2 values
+
+
+
+// tuples in function
+
+type tuple1 = [string, number];
+// BTW about "type" will talk about later  
+// We statically defined that tuple1 will contains 2 elements 
+// index 0th: string and 1s: number
+
+
+function fun1(tuple2: [string, number]) {
+    const a = tuple2[0];
+    // a in tuple2 0th index
+    const b = tuple2[1];
+    // const c = tuple2[1]; //will give an error because only 2 indexes
+   console.log(a , b);
+        
+  }
+
+// execute the functin
+  fun1(["hello", 42]);
+  
 
 
 

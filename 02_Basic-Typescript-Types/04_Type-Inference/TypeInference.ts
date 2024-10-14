@@ -1,3 +1,27 @@
+//2.4 
+// Type Inferrence 
+// Type Assertions
+// Using as for type assertions
+
+// Learn this
+
+
+
+
+export {}
+
+// Understanding type inference
+// type annotations
+
+
+//2.4.1 Type Inference: knowing things by assuming
+let a = 323
+// so it value tells that it is number so TSC will assume it dataType as umber
+
+
+// annotaions: data type of variable
+let b: number = 32
+
 // Type Inference
 // How TypeScript infers types
 // Type Assertions
@@ -8,7 +32,7 @@
 // Assertion: Assuming that something is true
 
 
-export {}
+
 
 let a: any = 12;
 // Here we assert that value is number alothough data type is any
