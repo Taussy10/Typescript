@@ -1,19 +1,20 @@
+// 2. Basic types types 
 
+//2.1  Primitive Types
+// string, number, boolean
 
+// 2.2 Refrenced Types
+//  Array and Tuple Types
+// Typed arrays
+// Tuples and their usage
+// Enums
+// Defining and using Enums
+// Any, Unknown, Void, and Never
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// 2.3 Type Inference
+// How TypeScript infers types
+// Type Assertions``
+// Using as for type assertions
 
 
 
@@ -21,64 +22,41 @@
 export {};
 
 
+// 2.1 Primitve types: means basic types that such as  number , string, boolean 
 
-
-
-
-
-
-
-const intro: string = "Typescript provides typeSafety to JS"
-//variblename: type = value
-
-// BTW Cannot redeclare block-scoped variable 
-// block-scope means those variable that has block scopes const let ...
-// so to get rid of this use var cause it's not block scoped but it's outdated
-
-// so use this: export {};
-// https://stackoverflow.com/questions/35758584/cannot-redeclare-block-scoped-variable
-
-// Why erorr: TypeScript uses the DOM typings for the global execution environment. 
-// DOM typings means: TypeScript automatically includes types for common browser APIs
-// Window(global object)
-// and due to this you are getting error 
-
-
-// Basic types:   
-//  Primitve types: number , string, boolean 
 const str:string = "String"
-let num: number = 43;
+const num: number = 43;
 const bool: boolean = true;
 
 
 
 
 
-// Refrence(cause everything happens on parent): () , [] and {}
 
-// eg: 
-let a = 2;
-let b = a;
-let c = b + 8;
-console.log(a); // 2
-console.log(b); // 2
-console.log(c); // 10
 
-// So nothing happens to parent(parent bole to for c , b is parnet and for b , a is parent)
-// cause b copied a but a =! b 
+// ONE TIP
 
-let d = [1, 2, 3]
-let e = d 
-let f = e.splice(e.length - 1, 1) // calcu e lenth and subtract one then remove the last and returns it 
+const intro: string = "Typescript provides typeSafety to JS"
+// We declared intro variable in intro.ts so we 
+//  Cannot redeclare block-scoped variable
 
-console.log(d); //[1, 2]
-console.log(e); //[1, 2]
-console.log(f); //[3]
-// so here parent elements are getting affected due to child 
+// block-scope means those variable that has block scopes const let ...
+// so to get rid of this use var cause it's not block scoped but it's outdated
 
-// cause b copied(not copied basically it took refrence of parnet) a but a = b 
+// so use this: export {};
+// https://stackoverflow.com/questions/35758584/cannot-redeclare-block-scoped-variable
 
-// that's why called refrence types cause they take refrece of parent not copy it
+// But Why did we got erorr: TypeScript uses the DOM typings for the global execution environment. 
+// DOM typings means: TypeScript automatically includes types for common browser APIs
+// Window(global object)
+// and due to this you are getting error 
+
+
+
+
+
+
+
 
 
 
@@ -159,13 +137,12 @@ if (typeof g === "string") {
     console.log("It's a string");
 } 
 
-
-let f: unknown = 45
-f = "Hello"
+let h: unknown = 45
+h = "Hello"
 // typeof f has changed to string 
-f = 43
+h = 43
 
-if (typeof f === "string") {
+if (typeof h === "string") {
     console.log("It's a string");
 } else{
       console.log("It's a number");
@@ -244,7 +221,7 @@ function fun4(a:string) {
 
 //  Null: when you want to find but don't get then you got null
 
-let h:null = null
+let j:null = null
 
 // Undefined: If you don't give value to something then undefined
 
