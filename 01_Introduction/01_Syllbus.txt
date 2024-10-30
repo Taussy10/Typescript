@@ -69,7 +69,8 @@ Static Methods and Properties
 
 6. Advanced Types
 Union and Intersection Types
-Literal Types
+Li
++teral Types
 String and numeric literal types
 Type Guards
 Using typeof, instanceof, and custom type guards
