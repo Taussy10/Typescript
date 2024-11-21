@@ -13,16 +13,31 @@ export {}
 // 1. Standard 
 // will return number
 
+
+// How to provide types to arrow funtion 
+
+// so when to about function it has two things 
+// 1. Parameters  2. Return 
+// so we have to provide tyeps two both 
+// params have types of aa and b and 
+// it's returing a number so return type is number
+
+const arrow1 = (a:number , b:number):number => {
+    return a+b
+}
+arrow1(3,2)
+
+
 // How to write function with callbacks
 
-function fun1(name:string , (value:string) =>void )  {
-    console.log(name);
+// function fun1(name:string , (value:string) =>void )  {
+//     console.log(name);
     
-}
-fun1("Tausif", (value:string) => {
-    console.log(value);
+// }
+// fun1("Tausif", (value:string) => {
+//     console.log(value);
     
-})
+// })
 
 
 
